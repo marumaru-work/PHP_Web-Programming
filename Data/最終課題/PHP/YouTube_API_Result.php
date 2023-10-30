@@ -9,7 +9,7 @@
 // リクエストURL（YouTube Data API v3）, YouTube APIキー（2022/07/12 作成）, POSTで送られたパラメータ
 $info = array(
     "request_URL" => "https://www.googleapis.com/youtube/v3",
-    "API_key" => "AIzaSyC0n0UHD5y6daQa6-84VDjctqNq7NM8wZw",
+    "API_key" => "",
     "search_keyword" => $_POST["search_keyword"],
     "search_type" => $_POST["search_type"],
     "items_displayed" => $_POST["items_displayed"]);
