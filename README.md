@@ -46,3 +46,5 @@ function connect_database($database_name)
 
 ## 動作デモ
 動作デモは["/YouTubeAPI_v3/moves.mp4"](./moves.mp4)(73.9MB)でご覧いただけます。
+
+（※ドキュメント、および動画内に記載されております、APIキーは利用できません。）
