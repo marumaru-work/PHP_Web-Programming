@@ -9,7 +9,7 @@
 // リクエストURL（YouTube Data API v3）, YouTube APIキー（2022/07/12 作成）, POSTで送られたパラメータ
 $info = array(
     "request_URL" => "https://www.googleapis.com/youtube/v3",
-    "API_key" => "Prease input your API key.",
+    "API_key" => /*Please enter your API key.*/"",
     "search_keyword" => $_POST["search_keyword"],
     "search_type" => $_POST["search_type"],
     "items_displayed" => $_POST["items_displayed"]);
@@ -137,7 +137,7 @@ function create_database($database_name)
     {
         $dbs = 'mysql:host=localhost;';
         $user = 'root';
-        $password = "";
+        $password = /*Please enter your password.*/"";
 
         // データベースに接続
         $pdo = new PDO($dbs, $user, $password);
@@ -170,7 +170,7 @@ function connect_database($database_name)
     {
         $dbs = 'mysql:dbname='.$database_name.';host=localhost';
         $user = 'root';
-        $password = "";
+        $password = /*Please enter your password.*/"";
 
         // データベースに接続
         $pdo = new PDO($dbs, $user, $password);
@@ -448,7 +448,7 @@ function register_video_info_in_the_dbs($info, $api_array, $database_name)
     }
     catch (Exception $e)
     {
-        print("&#x1f6ab; error: APIデータを取得する際にエラーが発生しました。<br>\n");
+        print("&#x1f6ab; error: APIからのデータを取得する際にエラーが発生しました。<br>\n");
         print($e->getMessage());
         die();
     }
@@ -476,7 +476,7 @@ function main($info)
     // 連想配列にする
     $api_array = json_decode($json, true);
 
-    print "&#x2705; info: APIデータを確認しました。APIデータをデータベース上のテーブルに登録します。<br>\n";
+    print "&#x2705; info: APIからのデータを確認しました。APIからのデータをデータベース上のテーブルに登録します。<br>\n";
 
     // 作成するデータベース名
     $database_name = "YouTube_API";

@@ -23,7 +23,7 @@ function print_table($search_type, $items_displayed)
     print "<div class = \"header\"> <h2> YouTube における特定キーワードのランキング表の出力 </h2> </div>\n";
 
     // パラメータ入力フィールド
-    print "<form action = \"http://localhost:8080/project/YouTube_API_Result.php\" method = \"post\">\n";
+    print "<form action = \"http://localhost:8888/YouTube_API_Result.php\" method = \"post\">\n";
     print "<div class = \"cell_size\">";
     print "<table border = \"1\" style = \"text-align: center;\">\n";
 
