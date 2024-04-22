@@ -6,7 +6,7 @@
 <body>
 <?php
 
-// リクエストURL（YouTube Data API v3）, YouTube APIキー（2022/07/12 作成）, POSTで送られたパラメータ
+// リクエストURL（YouTube Data API v3）, YouTube APIキー, POSTで送られたパラメータ
 $info = array(
     "request_URL" => "https://www.googleapis.com/youtube/v3",
     "API_key" => /*Please enter your API key.*/"",
